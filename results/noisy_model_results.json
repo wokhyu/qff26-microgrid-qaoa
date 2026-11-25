@@ -1,0 +1,33 @@
+{
+  "backend": "aer_simulator_from(fake_fez)",
+  "real_hardware": false,
+  "instance": {
+    "n": 8,
+    "density": 0.3,
+    "seed": 1,
+    "p": 2,
+    "shots": 4096
+  },
+  "exact_energy": 56.66862629801216,
+  "ideal": {
+    "expectation": 103.46874300245517,
+    "p_opt": 0.02945981720690005
+  },
+  "runs": {
+    "raw": {
+      "expectation": 115.34906544405109,
+      "p_opt": 0.02197265625
+    },
+    "suppressed": {
+      "expectation": 127.31546535923978,
+      "p_opt": 0.016357421875
+    }
+  },
+  "zne_energy": null,
+  "circuit": {
+    "depth": 298,
+    "two_qubit_gates": 121,
+    "two_qubit_depth": 88,
+    "num_qubits_used": 8
+  }
+}

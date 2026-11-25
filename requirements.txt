@@ -1,0 +1,9 @@
+# Pinned versions used to produce results/ (Python 3.11.9, Windows 11).
+qiskit==2.6.1
+qiskit-aer==0.18.0
+qiskit-ibm-runtime==0.52.1
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.11.1
+streamlit==1.67.0
+pytest==8.3.4

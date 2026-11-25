@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qff26-microgrid-qaoa"
+version = "0.1.0"
+description = "Microgrid load balancing as a QUBO solved with QAOA on IBM Quantum (QFF 2026 hackathon)"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+dependencies = [
+    "qiskit>=2.1",
+    "qiskit-aer>=0.17",
+    "qiskit-ibm-runtime>=0.40",
+    "numpy",
+    "scipy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+app = ["streamlit"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
